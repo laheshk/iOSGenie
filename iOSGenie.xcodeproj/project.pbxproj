@@ -14,6 +14,9 @@
 		3A1E5E492BB36B8E00F75F64 /* iOSGenieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E5E482BB36B8E00F75F64 /* iOSGenieTests.swift */; };
 		3A1E5E532BB36B8E00F75F64 /* iOSGenieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E5E522BB36B8E00F75F64 /* iOSGenieUITests.swift */; };
 		3A1E5E552BB36B8E00F75F64 /* iOSGenieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E5E542BB36B8E00F75F64 /* iOSGenieUITestsLaunchTests.swift */; };
+		3A1E5E632BB36C7600F75F64 /* Wave in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1E5E622BB36C7600F75F64 /* Wave */; };
+		3A1E5E652BB36CB300F75F64 /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E5E642BB36CB300F75F64 /* DockView.swift */; };
+		3A1E5E672BB36CD600F75F64 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E5E662BB36CD600F75F64 /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		3A1E5E4E2BB36B8E00F75F64 /* iOSGenieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSGenieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1E5E522BB36B8E00F75F64 /* iOSGenieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGenieUITests.swift; sourceTree = "<group>"; };
 		3A1E5E542BB36B8E00F75F64 /* iOSGenieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGenieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A1E5E642BB36CB300F75F64 /* DockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
+		3A1E5E662BB36CD600F75F64 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1E5E632BB36C7600F75F64 /* Wave in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				3A1E5E372BB36B8D00F75F64 /* iOSGenieApp.swift */,
 				3A1E5E392BB36B8D00F75F64 /* ContentView.swift */,
+				3A1E5E642BB36CB300F75F64 /* DockView.swift */,
+				3A1E5E662BB36CD600F75F64 /* Shader.metal */,
 				3A1E5E3B2BB36B8E00F75F64 /* Assets.xcassets */,
 				3A1E5E3D2BB36B8E00F75F64 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = iOSGenie;
+			packageProductDependencies = (
+				3A1E5E622BB36C7600F75F64 /* Wave */,
+			);
 			productName = iOSGenie;
 			productReference = 3A1E5E342BB36B8D00F75F64 /* iOSGenie.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 3A1E5E2B2BB36B8D00F75F64;
+			packageReferences = (
+				3A1E5E612BB36C7600F75F64 /* XCRemoteSwiftPackageReference "Wave" */,
+			);
 			productRefGroup = 3A1E5E352BB36B8D00F75F64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1E5E672BB36CD600F75F64 /* Shader.metal in Sources */,
 				3A1E5E3A2BB36B8D00F75F64 /* ContentView.swift in Sources */,
+				3A1E5E652BB36CB300F75F64 /* DockView.swift in Sources */,
 				3A1E5E382BB36B8D00F75F64 /* iOSGenieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +476,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A1E5E612BB36C7600F75F64 /* XCRemoteSwiftPackageReference "Wave" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jtrivedi/Wave";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A1E5E622BB36C7600F75F64 /* Wave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A1E5E612BB36C7600F75F64 /* XCRemoteSwiftPackageReference "Wave" */;
+			productName = Wave;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A1E5E2C2BB36B8D00F75F64 /* Project object */;
 }
